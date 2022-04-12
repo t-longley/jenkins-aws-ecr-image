@@ -6,7 +6,7 @@ ecs-cli configure profile --access-key $AWS_ACCESS_KEY_ID \
 --secret-key $AWS_SECRET_ACCESS_KEY \
 --profile-name ec2-tutorial-profile
 
-ecs-cli up --keypair test-jenkins-aws-ecr --capability-iam --size 2 --instance-type t2.micro \
+ecs-cli up --keypair capstone --capability-iam --size 2 --instance-type t2.micro \
 --cluster-config ec2-tutorial --ecs-profile ec2-tutorial-profile --port 5000
 
 sleep 60
