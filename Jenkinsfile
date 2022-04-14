@@ -9,7 +9,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-          sh 'sudo chmod 777 /var/run/docker.sock'
+          
           dockerImage = docker.build registry + ":latest"
           sh 'echo $dockerImage'
         }
