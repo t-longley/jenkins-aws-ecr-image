@@ -10,7 +10,7 @@ pipeline {
       steps{
         script {
           dockerImage = docker.build registry + ":latest"
-          sh 'echo $dockerImage'
+          sh 'echo sudo $dockerImage'
         }
       }
     }
